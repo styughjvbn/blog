@@ -17,9 +17,6 @@ menu:
     - name: Docs
       pageRef: /docs
       weight: 1
-    - name: About
-      pageRef: /about
-      weight: 2
     - name: Search
       weight: 3
       params:
@@ -33,12 +30,8 @@ menu:
 params:
   navbar:
     displayTitle: true
-    displayLogo: false
+    displayLogo: true
 
   footer:
-    displayCopyright: false
+    displayCopyright: true
     displayPoweredBy: true
-
-  editURL:
-    enable: true
-    base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
