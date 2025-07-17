@@ -1,15 +1,16 @@
 ---
 date: '2025-07-12T15:46:31+09:00'
+toc: false
 ---
 
-<div class="hx:mt-6 hx:mb-6">
-{{< hextra/hero-headline >}}
-  Build modern websites&nbsp;<br class="hx:sm:block hx:hidden" />with Markdown and Hugo
-{{< /hextra/hero-headline >}}
+<div style="margin-top: 50px; margin-bottom: 40px">
+<img
+  src="intro.jpg"
+  style="border-radius: 50%; object-fit: cover; object-position: center; width: 25rem; height: 25rem; object-position: 50% 95%;"
+/>
 </div>
 
-<div class="hx:mb-12">
-{{< hextra/hero-subtitle >}}
-  Fast, batteries-included Hugo theme&nbsp;<br class="hx:sm:block hx:hidden" />for creating beautiful static websites
-{{< /hextra/hero-subtitle >}}
+<div align="center">
+  <h1>SeoJongWon</h1>
+  <p>Backend Developer</p>
 </div>
