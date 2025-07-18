@@ -2,6 +2,8 @@
 date: '2025-07-17T17:15:12+09:00'
 draft: false
 title: '졸업작품'
+cascade:
+    type: docs
 ---
 
 ![](졸업작품.jpg)
