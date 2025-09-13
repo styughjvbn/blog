@@ -21,10 +21,15 @@ layout: wide
 
 {{< cards >}}
   {{< card
-        link="http://sjw-project-demo.site/"
-        title="COCO"
+        title="COCO - 작업중"
         subtitle="졸업작품으로 진행한 초보자용 AI활용 온라인 저지"
         image="졸작.png"
+        imageStyle="object-fit:cover; aspect-ratio:16/9;"
+  >}}
+  {{< card
+        title="OZZ - 작업중"
+        subtitle="SSAFY 1차 프로젝트 - 구매내역 기반 온라인 옷장"
+        image="구매내역기반온라인옷장.webp"
         imageStyle="object-fit:cover; aspect-ratio:16/9;"
   >}}
 {{< /cards >}}
