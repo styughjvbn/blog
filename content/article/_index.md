@@ -9,5 +9,9 @@ title: 'Article'
 {{< /cards >}}
 
 {{< cards >}}
+  {{< card link="VLM 개선 프로젝트" title="VLM 개선 프로젝트" icon="folder-tree" subtitle="SSAFY x 삼성전자 연계 프로젝트" >}}
+{{< /cards >}}
+
+{{< cards >}}
   {{< card link="홈서버" title="홈서버" icon="folder-tree" subtitle="프로젝트 데모 서버" >}}
 {{< /cards >}}
