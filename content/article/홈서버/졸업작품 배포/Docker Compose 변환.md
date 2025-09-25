@@ -2,6 +2,7 @@
 date: '2025-08-26T00:49:17+09:00'
 draft: false
 title: 'Docker Compose 변환'
+weight: 1
 ---
 
 Docker Compose로 패키징되어 있던 것을 k3s를 통해 쿠버네티스 환경에 맞도록 변경시켜 적용해보았다.  
