@@ -21,7 +21,7 @@ layout: wide
 
 {{< cards >}}
   {{< card
-        link="http://sjw-project-demo.site/"
+        link="http://sjw-project.site/"
         title="COCO"
         subtitle="졸업작품으로 진행한 초보자용 AI활용 온라인 저지"
         image="졸작.png"
