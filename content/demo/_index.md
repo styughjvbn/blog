@@ -28,7 +28,8 @@ layout: wide
         imageStyle="object-fit:cover; aspect-ratio:16/9;"
   >}}
   {{< card
-        title="http://ozz.sjw-project.site/"
+        link="http://ozz.sjw-project.site/"
+        title="OZZ"
         subtitle="SSAFY 1차 프로젝트 - 구매내역 기반 온라인 옷장"
         image="구매내역기반온라인옷장.webp"
         imageStyle="object-fit:cover; aspect-ratio:16/9;"
