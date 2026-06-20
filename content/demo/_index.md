@@ -34,4 +34,11 @@ layout: wide
         image="구매내역기반온라인옷장.webp"
         imageStyle="object-fit:cover; aspect-ratio:16/9;"
   >}}
+  {{< card
+        link="http://shared-memo.sjw-project.site/"
+        title="공유 메모"
+        subtitle="인턴 과정 중 진행한 공유 메모 프로젝트"
+        image="공유-메모.png"
+        imageStyle="object-fit:cover; aspect-ratio:16/9;"
+  >}}
 {{< /cards >}}
