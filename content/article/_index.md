@@ -13,7 +13,7 @@ title: "Article"
 {{< /cards >}}
 
 {{< cards >}}
-{{< card link="VLM-개선-프로젝트" title="VLM 개선 프로젝트" icon="folder-tree" subtitle="SSAFY x 삼성전자 연계 프로젝트" >}}
+{{< card link="vlm-개선-프로젝트" title="VLM 개선 프로젝트" icon="folder-tree" subtitle="SSAFY x 삼성전자 연계 프로젝트" >}}
 {{< /cards >}}
 
 {{< cards >}}
@@ -22,4 +22,8 @@ title: "Article"
 
 {{< cards >}}
 {{< card link="공유-메모" title="공유 메모" icon="folder-tree" subtitle="인턴 프로젝트" >}}
+{{< /cards >}}
+
+{{< cards >}}
+{{< card link="온라인-옷장" title="온라인 옷장" icon="folder-tree" subtitle="SSAFY 1차 프로젝트" >}}
 {{< /cards >}}
