@@ -6,7 +6,7 @@ cascade:
     type: docs
 ---
 
-![](졸업작품.jpg)
+[![](졸업작품.jpg)](https://coco.sjw-project.site/)
 
 ## 프로젝트 개요
 - **기간 및 구성**: 23.03.01 - 23.11.07

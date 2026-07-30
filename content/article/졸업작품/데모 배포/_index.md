@@ -1,10 +1,10 @@
 ---
 date: '2025-08-25T16:00:24+09:00'
 draft: false
-title: '졸업작품 배포'
+title: '데모 배포'
 cascade:
     type: docs
-weight: 2
+weight: 3
 ---
 
 ![배포아키텍처](배포아키텍처.png)
