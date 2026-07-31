@@ -1,5 +1,4 @@
 ---
-
 date: '2026-07-10T10:50:00+09:00'
 draft: false
 title: 'Green-house'

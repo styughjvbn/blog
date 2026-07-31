@@ -21,6 +21,13 @@ layout: wide
 
 {{< cards >}}
   {{< card
+        link="https://green-house-demo.sjw-project.site/"
+        title="농장 관리 시스템"
+        subtitle="본가 농장 관리를 위한 시스템"
+        image="농장-관리-시스템.png"
+        imageStyle="object-fit:cover; aspect-ratio:16/9;"
+  >}}
+  {{< card
         link="http://coco.sjw-project.site/"
         title="COCO"
         subtitle="졸업작품으로 진행한 초보자용 AI활용 온라인 저지"
