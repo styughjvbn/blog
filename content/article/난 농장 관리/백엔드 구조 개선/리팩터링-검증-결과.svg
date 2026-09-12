@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">백엔드 리팩터링 검증 결과</title>
+  <desc id="desc">모듈 내부 구현 직접 의존 예외, 작업과 재고 분석의 SQL 횟수, 테스트 실행 결과를 간단히 비교한다.</desc>
+  <rect width="1200" height="520" fill="#fafafa"/>
+  <style>
+    text { font-family: Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #202124; }
+    .heading { font-size: 27px; font-weight: 600; }
+    .section { font-size: 18px; font-weight: 600; }
+    .number { font-size: 37px; font-weight: 600; }
+    .body { font-size: 17px; }
+    .note { font-size: 15px; fill: #6b6f72; }
+    .divider { stroke: #d4d7d6; stroke-width: 1; }
+    .before { fill: #a9adab; }
+    .after { fill: #3f6b55; }
+  </style>
+
+  <text x="54" y="55" class="heading">리팩터링 검증 결과</text>
+  <line x1="394" y1="105" x2="394" y2="455" class="divider"/>
+  <line x1="805" y1="105" x2="805" y2="455" class="divider"/>
+
+  <text x="54" y="132" class="section">모듈 내부 구현 직접 의존 예외</text>
+  <text x="54" y="205" class="number">124</text>
+  <text x="184" y="205" class="number" fill="#6b6f72">→</text>
+  <text x="270" y="205" class="number" fill="#3f6b55">0</text>
+  <rect x="54" y="245" width="286" height="18" class="before"/>
+  <rect x="54" y="286" width="2" height="18" class="after"/>
+  <text x="54" y="340" class="body">Entity · Repository · Q 타입</text>
+  <text x="54" y="368" class="body">Controller · HTTP DTO</text>
+  <text x="54" y="410" class="note">정확한 예외 목록 기반</text>
+
+  <text x="434" y="132" class="section">분석 조회 SQL</text>
+  <text x="434" y="190" class="body">작업 분석</text>
+  <rect x="548" y="165" width="168" height="28" class="before"/>
+  <rect x="548" y="205" width="56" height="28" class="after"/>
+  <text x="726" y="187" class="body">6</text>
+  <text x="614" y="227" class="body">2</text>
+
+  <text x="434" y="290" class="body">재고 분석</text>
+  <rect x="548" y="265" width="112" height="28" class="before"/>
+  <rect x="548" y="305" width="56" height="28" class="after"/>
+  <text x="670" y="287" class="body">2</text>
+  <text x="614" y="327" class="body">1</text>
+  <text x="434" y="410" class="note">PostgreSQL · 항목 1/10/50개</text>
+
+  <text x="845" y="132" class="section">최종 회귀 검증</text>
+  <text x="845" y="205" class="number">459</text>
+  <text x="845" y="234" class="body">기본 테스트</text>
+  <text x="1030" y="205" class="number">98</text>
+  <text x="1030" y="234" class="body">PostgreSQL</text>
+  <text x="845" y="316" class="number">2</text>
+  <text x="845" y="345" class="body">benchmark</text>
+  <text x="1030" y="316" class="number" fill="#3f6b55">0</text>
+  <text x="1030" y="345" class="body">실패 · skip</text>
+  <text x="845" y="410" class="note">리팩터링 완료 시점</text>
+
+  <text x="54" y="488" class="note">근거: backend-refactoring-plan.md · 측정 시점과 조건이 다른 결과는 합산하지 않음</text>
+</svg>
