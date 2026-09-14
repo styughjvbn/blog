@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
-  <title id="title">격리 복원 데이터베이스의 Engine 전환 rehearsal</title>
-  <desc id="desc">운영 백업을 별도 PostgreSQL에 복원해 PLAN, IMPORT, VERIFY, ACTIVE, API smoke, reconciliation을 수행한 결과다.</desc>
+  <title id="title">격리 복원 데이터베이스의 상태 변경 엔진 전환 예행연습</title>
+  <desc id="desc">운영 백업을 별도 PostgreSQL에 복원해 사전 검사, 이력 적재, 검증, 전환, 주요 기능 확인과 전체 정합성 검사를 수행한 결과다.</desc>
   <rect width="1200" height="500" fill="#fafafa"/>
   <style>
     text { font-family: Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #202124; }
@@ -19,7 +19,7 @@
     </marker>
   </defs>
 
-  <text x="54" y="55" class="heading">Engine 전환 rehearsal</text>
+  <text x="54" y="55" class="heading">상태 변경 엔진 전환 예행연습</text>
   <text x="54" y="84" class="sub">운영 백업 → 격리 PostgreSQL 18 복원</text>
 
   <rect x="54" y="145" width="156" height="86" class="box"/>
@@ -29,18 +29,18 @@
   <rect x="834" y="145" width="156" height="86" class="box"/>
   <rect x="1021" y="145" width="125" height="86" class="accent"/>
 
-  <text x="132" y="181" text-anchor="middle" class="label">PLAN</text>
-  <text x="132" y="207" text-anchor="middle" class="value">PRE_BASELINE</text>
-  <text x="335" y="181" text-anchor="middle" class="label">IMPORT</text>
+  <text x="132" y="181" text-anchor="middle" class="label">사전 검사</text>
+  <text x="132" y="207" text-anchor="middle" class="value">문제 없음</text>
+  <text x="335" y="181" text-anchor="middle" class="label">이력 적재</text>
   <text x="335" y="207" text-anchor="middle" class="value">314 / 348</text>
-  <text x="538" y="181" text-anchor="middle" class="label">VERIFY</text>
-  <text x="538" y="207" text-anchor="middle" class="value">ready=true</text>
-  <text x="725" y="181" text-anchor="middle" class="label">ACTIVE</text>
-  <text x="725" y="207" text-anchor="middle" class="value">writer 2.0.0</text>
-  <text x="912" y="181" text-anchor="middle" class="label">API smoke</text>
+  <text x="538" y="181" text-anchor="middle" class="label">전체 검증</text>
+  <text x="538" y="207" text-anchor="middle" class="value">통과</text>
+  <text x="725" y="181" text-anchor="middle" class="label">전환</text>
+  <text x="725" y="207" text-anchor="middle" class="value">새 변경 경로</text>
+  <text x="912" y="181" text-anchor="middle" class="label">주요 기능 확인</text>
   <text x="912" y="207" text-anchor="middle" class="value">재시도·병렬 요청</text>
-  <text x="1083" y="181" text-anchor="middle" class="label">대사</text>
-  <text x="1083" y="207" text-anchor="middle" class="value">issues=[]</text>
+  <text x="1083" y="181" text-anchor="middle" class="label">최종 검사</text>
+  <text x="1083" y="207" text-anchor="middle" class="value">문제 없음</text>
 
   <path d="M210 188 L239 188" class="line" marker-end="url(#arrow)"/>
   <path d="M429 188 L458 188" class="line" marker-end="url(#arrow)"/>
@@ -49,19 +49,19 @@
   <path d="M990 188 L1019 188" class="line" marker-end="url(#arrow)"/>
 
   <line x1="54" y1="292" x2="1146" y2="292" stroke="#d4d7d6" stroke-width="1"/>
-  <text x="54" y="334" class="label">IMPORT</text>
+  <text x="54" y="334" class="label">이력 적재</text>
   <text x="205" y="334" class="value">Mutation 314</text>
   <text x="390" y="334" class="value">Entry 348</text>
   <text x="545" y="334" class="value">현존 그룹 269</text>
   <text x="750" y="334" class="value">삭제 tombstone 6</text>
   <text x="970" y="334" class="value">재실행 신규 0</text>
 
-  <text x="54" y="393" class="label">SMOKE 후</text>
+  <text x="54" y="393" class="label">기능 확인 후</text>
   <text x="205" y="393" class="value">그룹 272</text>
   <text x="390" y="393" class="value">Mutation 320</text>
   <text x="575" y="393" class="value">Entry 356</text>
-  <text x="750" y="393" class="value">ACTIVE</text>
-  <text x="970" y="393" class="value">ready=true · issues=[]</text>
+  <text x="750" y="393" class="value">전환 완료</text>
+  <text x="970" y="393" class="value">정합성 문제 없음</text>
 
   <text x="54" y="466" class="note">근거: d0f41a4a · orchid-engine-cutover-20260908.md · 운영 Kubernetes 적용 결과와는 구분</text>
 </svg>

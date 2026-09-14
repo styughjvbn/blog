@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="590" viewBox="0 0 1200 590" role="img" aria-labelledby="title desc">
   <title id="title">난 묶음 상태 변경 구조 개선 전후</title>
-  <desc id="desc">개선 전에는 Work, Inbound, Sales가 난 묶음과 저장소를 직접 변경했지만 개선 후에는 의도를 가진 명령을 통해 Mutation Engine만 상태를 변경한다.</desc>
+  <desc id="desc">개선 전에는 작업, 입고와 판매 영역이 난 묶음과 저장소를 직접 변경했지만 개선 후에는 목적이 담긴 요청을 통해 상태 변경 엔진만 데이터를 변경한다.</desc>
   <rect width="1200" height="590" fill="#fafafa"/>
   <style>
     text { font-family: Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #202124; }
@@ -29,15 +29,15 @@
   <rect x="54" y="105" width="145" height="60" class="box"/>
   <rect x="233" y="105" width="145" height="60" class="box"/>
   <rect x="412" y="105" width="145" height="60" class="box"/>
-  <text x="126" y="143" text-anchor="middle" class="label">Work</text>
-  <text x="305" y="143" text-anchor="middle" class="label">Inbound</text>
-  <text x="484" y="143" text-anchor="middle" class="label">Sales</text>
+  <text x="126" y="143" text-anchor="middle" class="label">작업</text>
+  <text x="305" y="143" text-anchor="middle" class="label">입고</text>
+  <text x="484" y="143" text-anchor="middle" class="label">판매</text>
 
   <rect x="136" y="290" width="340" height="78" class="box"/>
-  <text x="306" y="322" text-anchor="middle" class="label">OrchidGroup</text>
+  <text x="306" y="322" text-anchor="middle" class="label">난 묶음</text>
   <text x="306" y="350" text-anchor="middle" class="body">수량 · 위치 · 예약 상태</text>
   <rect x="196" y="430" width="220" height="62" class="box"/>
-  <text x="306" y="469" text-anchor="middle" class="label">Repository</text>
+  <text x="306" y="469" text-anchor="middle" class="label">DB 저장소</text>
 
   <path d="M126 165 C126 230 205 246 250 290" class="direct" marker-end="url(#arrow-red)"/>
   <path d="M305 165 L305 288" class="direct" marker-end="url(#arrow-red)"/>
@@ -48,18 +48,18 @@
   <rect x="634" y="105" width="145" height="60" class="box"/>
   <rect x="813" y="105" width="145" height="60" class="box"/>
   <rect x="992" y="105" width="145" height="60" class="box"/>
-  <text x="706" y="143" text-anchor="middle" class="label">Work</text>
-  <text x="885" y="143" text-anchor="middle" class="label">Inbound</text>
-  <text x="1064" y="143" text-anchor="middle" class="label">Sales</text>
+  <text x="706" y="143" text-anchor="middle" class="label">작업</text>
+  <text x="885" y="143" text-anchor="middle" class="label">입고</text>
+  <text x="1064" y="143" text-anchor="middle" class="label">판매</text>
 
   <rect x="715" y="220" width="340" height="62" class="box"/>
-  <text x="885" y="259" text-anchor="middle" class="label">Typed Command</text>
+  <text x="885" y="259" text-anchor="middle" class="label">목적이 담긴 변경 요청</text>
   <rect x="715" y="330" width="340" height="70" class="accent"/>
-  <text x="885" y="373" text-anchor="middle" class="label">Mutation Engine</text>
+  <text x="885" y="373" text-anchor="middle" class="label">상태 변경 엔진</text>
   <rect x="649" y="450" width="250" height="62" class="box"/>
   <rect x="922" y="450" width="215" height="62" class="box"/>
-  <text x="774" y="489" text-anchor="middle" class="label">OrchidGroup</text>
-  <text x="1029" y="489" text-anchor="middle" class="label">Mutation Ledger</text>
+  <text x="774" y="489" text-anchor="middle" class="label">난 묶음</text>
+  <text x="1029" y="489" text-anchor="middle" class="label">변경 원장</text>
 
   <path d="M706 165 L805 219" class="line" marker-end="url(#arrow)"/>
   <path d="M885 165 L885 218" class="line" marker-end="url(#arrow)"/>
@@ -69,5 +69,5 @@
   <path d="M928 400 L1005 448" class="line" marker-end="url(#arrow)"/>
   <text x="1108" y="307" text-anchor="end" class="body" fill="#3f6b55">변경 경로 1곳</text>
 
-  <text x="54" y="558" class="note">근거: f7b52289–5dcb973f · Farm/Work/Sales/Inbound writer 전환 기록</text>
+  <text x="54" y="558" class="note">근거: f7b52289–5dcb973f · 작업·입고·판매의 난 묶음 변경 경로 전환 기록</text>
 </svg>
