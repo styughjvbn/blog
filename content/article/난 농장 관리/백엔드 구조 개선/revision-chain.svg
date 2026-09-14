@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">상태 버전과 변경 전후 값으로 누락 확인</title>
+  <desc id="desc">시작 상태부터 변경 이력이 연속되어 현재 데이터베이스 상태와 마지막 변경 결과가 일치하는지 전체 정합성 검사가 확인한다.</desc>
+  <rect width="1200" height="430" fill="#fafafa"/>
+  <style>
+    text { font-family: Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #202124; }
+    .heading { font-size: 27px; font-weight: 600; }
+    .label { font-size: 20px; font-weight: 600; }
+    .body { font-size: 17px; }
+    .note { font-size: 15px; fill: #6b6f72; }
+    .box { fill: #ffffff; stroke: #c7cbca; stroke-width: 1.5; }
+    .accent { fill: #edf3ef; stroke: #3f6b55; stroke-width: 2; }
+    .line { stroke: #777d7a; stroke-width: 2; fill: none; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#777d7a"/>
+    </marker>
+  </defs>
+
+  <text x="54" y="55" class="heading">상태 버전과 변경 전후 값 검증</text>
+
+  <rect x="54" y="112" width="210" height="104" class="box"/>
+  <text x="159" y="151" text-anchor="middle" class="label">시작 상태</text>
+  <text x="159" y="182" text-anchor="middle" class="body">버전 0</text>
+
+  <rect x="326" y="112" width="210" height="104" class="box"/>
+  <text x="431" y="151" text-anchor="middle" class="label">변경</text>
+  <text x="431" y="182" text-anchor="middle" class="body">0 → 1</text>
+
+  <rect x="598" y="112" width="210" height="104" class="box"/>
+  <text x="703" y="151" text-anchor="middle" class="label">변경</text>
+  <text x="703" y="182" text-anchor="middle" class="body">1 → 2</text>
+
+  <rect x="870" y="112" width="270" height="104" class="accent"/>
+  <text x="1005" y="151" text-anchor="middle" class="label">현재 DB 상태</text>
+  <text x="1005" y="182" text-anchor="middle" class="body">상태 버전 2</text>
+
+  <path d="M264 164 L324 164" class="line" marker-end="url(#arrow)"/>
+  <path d="M536 164 L596 164" class="line" marker-end="url(#arrow)"/>
+  <path d="M808 164 L868 164" class="line" marker-end="url(#arrow)"/>
+
+  <text x="295" y="100" text-anchor="middle" class="body">앞 결과 = 다음 시작값</text>
+  <text x="567" y="100" text-anchor="middle" class="body">앞 결과 = 다음 시작값</text>
+  <text x="839" y="100" text-anchor="middle" class="body">마지막 결과 = 현재 상태</text>
+
+  <line x1="159" y1="216" x2="159" y2="295" class="line"/>
+  <line x1="431" y1="216" x2="431" y2="295" class="line"/>
+  <line x1="703" y1="216" x2="703" y2="295" class="line"/>
+  <line x1="1005" y1="216" x2="1005" y2="295" class="line"/>
+  <line x1="159" y1="295" x2="1005" y2="295" class="line"/>
+  <rect x="455" y="272" width="255" height="54" class="accent"/>
+  <text x="582" y="306" text-anchor="middle" class="label">전체 정합성 검사</text>
+
+  <text x="582" y="363" text-anchor="middle" class="body">버전 단절 · 변경값 불일치 · 엔진을 거치지 않은 수정 탐지</text>
+  <text x="54" y="406" class="note">근거: V21·V22 migration, reconciliation service와 PostgreSQL E2E</text>
+</svg>

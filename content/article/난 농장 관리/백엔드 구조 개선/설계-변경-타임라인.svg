@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="455" viewBox="0 0 1200 455" role="img" aria-labelledby="title desc">
+  <title id="title">Mutation Engine 설계 변경 타임라인</title>
+  <desc id="desc">2026년 8월 20일 변경 원장을 만든 뒤 과거 이력 모델과 이중 계산 검증을 도입했으나 제거하고 연속된 상태 이력과 하나의 변경 경로로 전환한 커밋 흐름이다.</desc>
+  <rect width="1200" height="455" fill="#fafafa"/>
+  <style>
+    text { font-family: Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; fill: #202124; }
+    .heading { font-size: 27px; font-weight: 600; }
+    .date { font-size: 16px; fill: #6b6f72; }
+    .label { font-size: 18px; font-weight: 600; }
+    .hash { font-size: 14px; fill: #6b6f72; }
+    .note { font-size: 15px; fill: #6b6f72; }
+    .line { stroke: #a7abaa; stroke-width: 2; }
+    .dot { fill: #3f6b55; }
+    .removed { fill: #ffffff; stroke: #8d5a54; stroke-width: 2; }
+  </style>
+
+  <text x="54" y="55" class="heading">설계 변경 기록</text>
+  <line x1="92" y1="220" x2="1108" y2="220" class="line"/>
+
+  <circle cx="105" cy="220" r="8" class="dot"/>
+  <text x="105" y="143" text-anchor="middle" class="date">8월 20일</text>
+  <text x="105" y="173" text-anchor="middle" class="label">원장 기반</text>
+  <text x="105" y="196" text-anchor="middle" class="hash">88651c20</text>
+
+  <circle cx="300" cy="220" r="8" class="dot"/>
+  <text x="300" y="264" text-anchor="middle" class="date">8월 21일</text>
+  <text x="300" y="294" text-anchor="middle" class="label">과거 이력 모델</text>
+  <text x="300" y="317" text-anchor="middle" class="hash">58b27b81</text>
+
+  <circle cx="495" cy="220" r="8" class="dot"/>
+  <text x="495" y="143" text-anchor="middle" class="date">8월 21일</text>
+  <text x="495" y="173" text-anchor="middle" class="label">이중 계산 검증</text>
+  <text x="495" y="196" text-anchor="middle" class="hash">e9e8c990</text>
+
+  <circle cx="690" cy="220" r="9" class="removed"/>
+  <text x="690" y="264" text-anchor="middle" class="date">8월 26일</text>
+  <text x="690" y="294" text-anchor="middle" class="label">이중 계산 제거</text>
+  <text x="690" y="317" text-anchor="middle" class="hash">9bdbe791</text>
+
+  <circle cx="885" cy="220" r="8" class="dot"/>
+  <text x="885" y="143" text-anchor="middle" class="date">8월 28일</text>
+  <text x="885" y="173" text-anchor="middle" class="label">연속된 상태 이력</text>
+  <text x="885" y="196" text-anchor="middle" class="hash">33b4b4b5</text>
+
+  <circle cx="1080" cy="220" r="8" class="dot"/>
+  <text x="1080" y="264" text-anchor="middle" class="date">9월 8일</text>
+  <text x="1080" y="294" text-anchor="middle" class="label">기존 직접 변경 제거</text>
+  <text x="1080" y="317" text-anchor="middle" class="hash">4a8cb212</text>
+
+  <path d="M282 338 H708" stroke="#8d5a54" stroke-width="1.5" fill="none"/>
+  <text x="495" y="367" text-anchor="middle" class="date">별도 예외 모델과 운영 대기 대신 같은 이력 규칙과 복원 DB 예행연습 선택</text>
+
+  <text x="54" y="426" class="note">커밋 날짜는 작성 시각 기준 · 범위 f7b52289–5dcb973f</text>
+</svg>
