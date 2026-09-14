@@ -1,6 +1,6 @@
 ---
 date: '2026-09-12T19:00:00+09:00'
-draft: true
+draft: false
 title: '백엔드 구조 개선 기록'
 linkTitle: '백엔드 구조 개선'
 weight: 4
